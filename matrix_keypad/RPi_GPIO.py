@@ -69,6 +69,8 @@ class keypad():
         GPIO.setup(self.ROW[rowVal], GPIO.OUT)
         GPIO.output(self.ROW[rowVal], GPIO.HIGH)
  
+        time.sleep(0.001)
+
         # Scan columns for still-pushed key/button
         # A valid key press should set "colVal"  between 0 and 2.
         colVal = -1
