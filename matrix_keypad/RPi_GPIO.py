@@ -1,7 +1,8 @@
 #!/usr/bin/python
  
 import RPi.GPIO as GPIO
- 
+import time
+
 class keypad():
     def __init__(self, columnCount = 3):
         GPIO.setmode(GPIO.BOARD)
